@@ -28,7 +28,7 @@ public class MilkTea {
             trans = Integer.parseInt(JOptionPane.showInputDialog(null, """
                                                                        MilkTea Menu Choice 
                                                                         [1] Winter Melon
-                                                                      [2]Oreo Cheesecake
+                                                                        [2]Oreo Cheesecake
                                                                         [3] Salted Caramel                                                                      
                                                                        Choose [1-3]: """));
 
