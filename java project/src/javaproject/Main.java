@@ -49,34 +49,54 @@ public class Main extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(255, 250, 240));
 		panel.setBounds(-17, 0, 878, 438);
 		contentPane.add(panel);
 		panel.setLayout(null);
-		
+
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(Main.class.getResource("/images/last.png")));
 		lblNewLabel.setBounds(167, 90, 590, 153);
 		panel.add(lblNewLabel);
-		
+
 		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				System.out.print("Closed a Window");
+				dispose();
+			}
+		});
 		lblNewLabel_1.setIcon(new ImageIcon(Main.class.getResource("/images/Vector.png")));
 		lblNewLabel_1.setBackground(new Color(255, 102, 204));
 		lblNewLabel_1.setBounds(507, 279, 189, 93);
 		panel.add(lblNewLabel_1);
-		
+
 		JLabel lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+
+
+				System.out.print("Opened New Window");
+				dispose();
+				new menu_choices();
 				
-				System.out.println("PProceed");
+				
+
 			}
 		});
+
 		lblNewLabel_2.setIcon(new ImageIcon(Main.class.getResource("/images/Proceed.png")));
 		lblNewLabel_2.setBounds(278, 290, 181, 69);
 		panel.add(lblNewLabel_2);
+
+		
+		
+
 	}
+
+	
 }
