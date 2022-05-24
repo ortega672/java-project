@@ -1,9 +1,9 @@
-package Milktea;
+package Smoothie;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-public class MilkTeaMenu {
+public class SmoothieMenu {
 
     int choice;
 
@@ -13,11 +13,11 @@ public class MilkTeaMenu {
 
     public static int wallet;
 
-    MilkteaVariables mc = new MilkteaVariables();
+    SmoothieVariables mc = new SmoothieVariables();
 
     JFrame Optiopane;
 
-   public MilkTeaMenu() {
+   public SmoothieMenu() {
 
         do {
 
@@ -54,14 +54,14 @@ public class MilkTeaMenu {
 
     void order1() {
 
-        int Pillar = 65;
-        int Classic = 75;
-        int Grande = 85;
+        int Slim = 65;
+        int TheUsual  = 75;
+        int Jumbo = 85;
 
         prdChoice = Integer.parseInt(JOptionPane.showInputDialog(null,
-                "Cup Size Choice\n" + "[1] Pillar " + Pillar
-                + "\n[2] Classic " + Classic
-                + "\n[3] Grande Cup " + Grande
+                "Cup Size Choice\n" + "[1] Slim " + Slim
+                + "\n[2] The Usual " + TheUsual
+                + "\n[3] Jumbo " + Jumbo
                 + "\n[4] Go Back to Milktea Menu" + "\n"
                 + "Choose [1-3]: "));
 
@@ -69,7 +69,7 @@ public class MilkTeaMenu {
 
             qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Winter Melon + Pillar Cup "
                     + "\nQuantity: "));
-            wallet = qty * Pillar;
+            wallet = qty * Slim;
             passValue();
             order1();
 
@@ -77,7 +77,7 @@ public class MilkTeaMenu {
 
             qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Winter Melon + Classic Cup "
                     + "\nQuantity: "));
-            wallet = qty * Classic;
+            wallet = qty * TheUsual;
             passValue();
             order1();
 
@@ -85,7 +85,7 @@ public class MilkTeaMenu {
 
             qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Winter Melon + Grande Cup "
                     + "\n \nQuantity: "));
-            wallet = qty * Grande;
+            wallet = qty * Jumbo;
             passValue();
             order1();
         } else if (prdChoice == 4) {
@@ -96,14 +96,14 @@ public class MilkTeaMenu {
 
     void order2() {
 
-        int Pillar = 79;
-        int Classic = 89;
-        int Grande = 99;
+        int Slim = 79;
+        int TheUsual = 89;
+        int Jumbo = 99;
 
         prdChoice = Integer.parseInt(JOptionPane.showInputDialog(null,
-                "Cup Size Choice\n" + "[1] Pillar " + Pillar
-                + "\n[2] Classic " + Classic
-                + "\n[3] Grande Cup " + Grande
+                "Cup Size Choice\n" + "[1] Slim " + Slim
+                + "\n[2] The Usual " + TheUsual
+                + "\n[3] Jumbo " + Jumbo
                 + "\n[4] Go Back to Milktea Menu" + "\n"
                 + "Choose [1-3]: "));
 
@@ -111,7 +111,7 @@ public class MilkTeaMenu {
 
             qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Oreo Cheesecake + Pillar Cup "
                     + "\nQuantity: "));
-            wallet = qty * Pillar;
+            wallet = qty * Slim;
             passValue();
             order2();
 
@@ -119,7 +119,7 @@ public class MilkTeaMenu {
 
             qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Oreo Cheesecake + Classic Cup "
                     + "\nQuantity: "));
-            wallet = qty * Classic;
+            wallet = qty * TheUsual;
             passValue();
             order2();
 
@@ -127,7 +127,7 @@ public class MilkTeaMenu {
 
             qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Oreo Cheesecake + Grande Cup "
                     + "\n \nQuantity: "));
-            wallet = qty * Grande;
+            wallet = qty * Jumbo;
             passValue();
             order2();
         } else if (prdChoice == 4) {
@@ -138,14 +138,14 @@ public class MilkTeaMenu {
 
     void order3() {
 
-        int Pillar = 75;
-        int Classic = 85;
-        int Grande = 95;
+        int Slim = 75;
+        int TheUsual = 85;
+        int Jumbo = 95;
 
         prdChoice = Integer.parseInt(JOptionPane.showInputDialog(null,
-                "Cup Size Choice\n" + "[1] Pillar " + Pillar
-                + "\n[2] Classic " + Classic
-                + "\n[3] Grande Cup " + Grande
+                "Cup Size Choice\n" + "[1] Slim " + Slim
+                + "\n[2] The Usual " + TheUsual
+                + "\n[3] Jumbo " + Jumbo
                 + "\n[4] Go Back to Milktea Menu" + "\n"
                 + "Choose [1-3]: "));
 
@@ -153,7 +153,7 @@ public class MilkTeaMenu {
 
             qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Salted Caramel + Pillar Cup "
                     + "\nQuantity: "));
-            wallet = qty * Pillar;
+            wallet = qty * Slim;
             passValue();
             order3();
 
@@ -161,7 +161,7 @@ public class MilkTeaMenu {
 
             qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Salted Caramel + Classic Cup "
                     + "\nQuantity: "));
-            wallet = qty * Classic;
+            wallet = qty * TheUsual;
             passValue();
             order3();
 
@@ -169,7 +169,7 @@ public class MilkTeaMenu {
 
             qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Salted Caramel + Grande Cup "
                     + "\n \nQuantity: "));
-            wallet = qty * Grande;
+            wallet = qty * Jumbo;
             passValue();
             order3();
         } else if (prdChoice == 4) {
