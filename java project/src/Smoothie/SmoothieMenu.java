@@ -17,15 +17,14 @@ public class SmoothieMenu {
 
     JFrame Optiopane;
 
-   public SmoothieMenu() {
+    public SmoothieMenu() {
 
         do {
 
             choice = Integer.parseInt(JOptionPane.showInputDialog(null, "MilkTea Menu Choice\n"
-                    + "					 [1] Strawberry\n"
-                    + "					 [2]Lemon\n"
+                    + "					 [1] Strawberry     [4] Check Balance:\n"
+                    + "					 [2] Lemon             [5] Payment\n"
                     + "					 [3] Mango\n"
-                    + "[4] Check Balance:\n"
                     + "					Choose [1-3]:"));
 
             switch (choice) {
@@ -55,7 +54,7 @@ public class SmoothieMenu {
     void order1() {
 
         int Slim = 90;
-        int TheUsual  = 110;
+        int TheUsual = 110;
         int Jumbo = 130;
 
         prdChoice = Integer.parseInt(JOptionPane.showInputDialog(null,
@@ -177,8 +176,6 @@ public class SmoothieMenu {
         }
 
     }
-    
-    
 
     void passValue() {
 
