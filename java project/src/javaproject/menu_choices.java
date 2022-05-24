@@ -4,6 +4,7 @@ package javaproject;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import Milktea.MilkTeaMenu;
+import Smoothie.SmoothieMenu;
 
 public class menu_choices {
 
@@ -22,7 +23,7 @@ public class menu_choices {
 		JFrame optionpane = new JFrame();
 
 		do {
-			choice = Integer.parseInt(JOptionPane.showInputDialog(null, "\tMenu Choices \n" + "[1] MilkTea" + "\n [2] Fresh Tea" + "\n [3] Smoothie" + "\nChoose [1 - 3]: "));
+			choice = Integer.parseInt(JOptionPane.showInputDialog(null, "\tMenu Choices \n" + "[1] MilkTea" + "\n[2] Fresh Tea" + "\n[3] Smoothie" + "\nChoose [1 - 3]: "));
 
 			switch (choice)
 
@@ -40,7 +41,7 @@ public class menu_choices {
 				
 				
 			case 3: 
-				
+				new SmoothieMenu();
 				break;
 				
 				
