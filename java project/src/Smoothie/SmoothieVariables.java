@@ -2,6 +2,7 @@ package Smoothie;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javaproject.menu_choices;
 
 public class SmoothieVariables {
 
@@ -23,20 +24,20 @@ public class SmoothieVariables {
         this.choice = choice;
     }
 
-    void balance() {
+    public void balance() {
 
         JOptionPane.showMessageDialog(null, "Your Current Balance is: " + wallet);
     }
 
-    void payment(){
+    public void payment(){
         
         JFrame Optiopane;
         
         if(wallet == 0){
             JOptionPane.showMessageDialog(null, 
-                    "You don't have current balance. Please return to the Smoothie Menu"
+                    "You don't have current balance. Please return to the Main Menu"
             );
-            new SmoothieMenu();
+            new menu_choices();
         }else{
             payment = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter your Payment: "));
             pay();
@@ -47,7 +48,8 @@ public class SmoothieVariables {
     
     void pay(){
         
-        diff = payment - wallet;
+        
+        diff = payment - this.wallet;
         
         if (payment < wallet){
             JOptionPane.showMessageDialog(null, 

@@ -13,10 +13,10 @@ public class menu_choices {
     int choice;
     
     SmoothieVariables mc = new SmoothieVariables();
-
+    
     public static int cost;
 
-    menu_choices() {
+    public menu_choices() {
 
         JFrame optionpane = new JFrame();
         
@@ -55,7 +55,7 @@ public class menu_choices {
                     JOptionPane.showMessageDialog(null, "WRONG INPUT", "Warning Message!!!", JOptionPane.WARNING_MESSAGE);
                     new menu_choices();
             }
-        } while (choice < 3);
+        } while (choice < 5);
 
     }
 

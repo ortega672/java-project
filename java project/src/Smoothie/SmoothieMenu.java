@@ -2,6 +2,7 @@ package Smoothie;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javaproject.menu_choices;
 
 public class SmoothieMenu {
 
@@ -25,6 +26,7 @@ public class SmoothieMenu {
                     + "					 [1] Strawberry\n"
                     + "					 [2] Lemon\n"
                     + "					 [3] Mango\n"
+                    + " [4] Return to the Main Menu\n"
                     + "					Choose [1-3]:"));
 
             switch (choice) {
@@ -40,14 +42,10 @@ public class SmoothieMenu {
                 case 3 -> {
                     order3();
                 }
-
+                
                 case 4 -> {
-                    mc.balance();
+                    new menu_choices();
                 }
-                case 5 -> {
-                    mc.payment();
-                }
-
             }
 
         } while (choice <= 4);
@@ -91,7 +89,7 @@ public class SmoothieMenu {
             passValue();
             order1();
         } else if (prdChoice == 4) {
-
+            new menu_choices();
         }
 
     }
