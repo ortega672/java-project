@@ -15,9 +15,12 @@ public class MilkTeaMenu {
 
     MilkteaVariables mc = new MilkteaVariables();
 
+
     JFrame Optiopane;
 
    public MilkTeaMenu() {
+       
+      
 
         do {
 
@@ -89,7 +92,8 @@ public class MilkTeaMenu {
             passValue();
             order1();
         } else if (prdChoice == 4) {
-
+             
+            new MilkTeaMenu();
         }
 
     }
@@ -132,6 +136,7 @@ public class MilkTeaMenu {
             order2();
         } else if (prdChoice == 4) {
 
+             new MilkTeaMenu();
         }
 
     }
@@ -155,7 +160,7 @@ public class MilkTeaMenu {
                     + "\nQuantity: "));
             wallet = qty * Pillar;
             passValue();
-            order2();
+            order3();
 
         } else if (prdChoice == 2) {
 
@@ -163,7 +168,7 @@ public class MilkTeaMenu {
                     + "\nQuantity: "));
             wallet = qty * Classic;
             passValue();
-            order2();
+            order3();
 
         } else if (prdChoice == 3) {
 
@@ -171,15 +176,14 @@ public class MilkTeaMenu {
                     + "\n \nQuantity: "));
             wallet = qty * Grande;
             passValue();
-            order2();
+            order3();
         } else if (prdChoice == 4) {
 
+             new MilkTeaMenu();
         }
 
     }
     
-    
-
     void passValue() {
 
         num = num + wallet;

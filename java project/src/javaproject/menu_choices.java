@@ -28,7 +28,9 @@ public class menu_choices {
 
 			{
 			case 1: 
-				new MilkTeaMenu();
+                            
+				 new MilkTeaMenu();
+                                
 				break;
 				
 				
