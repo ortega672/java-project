@@ -4,6 +4,7 @@ package javaproject;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import Milktea.MilkTeaMenu;
+import Smoothie.SmoothieMenu;
 
 public class menu_choices {
 
@@ -38,7 +39,7 @@ public class menu_choices {
 				
 				
 			case 3: 
-				
+				new SmoothieMenu();
 				break;
 				
 				

@@ -1,9 +1,9 @@
-package Milktea;
+package Smoothie;
 
 import javax.swing.JOptionPane;
 
 
-public class MilkteaVariables {
+public class SmoothieVariables {
 
 	 int wallet;
          int choice;

@@ -22,9 +22,9 @@ public class SmoothieMenu {
         do {
 
             choice = Integer.parseInt(JOptionPane.showInputDialog(null, "MilkTea Menu Choice\n"
-                    + "					 [1] Winter Melon\n"
-                    + "					 [2]Oreo Cheesecake\n"
-                    + "					 [3] Salted Caramel\n"
+                    + "					 [1] Strawberry\n"
+                    + "					 [2]Lemon\n"
+                    + "					 [3] Mango\n"
                     + "[4] Check Balance:\n"
                     + "					Choose [1-3]:"));
 
@@ -54,9 +54,9 @@ public class SmoothieMenu {
 
     void order1() {
 
-        int Slim = 65;
-        int TheUsual  = 75;
-        int Jumbo = 85;
+        int Slim = 90;
+        int TheUsual  = 110;
+        int Jumbo = 130;
 
         prdChoice = Integer.parseInt(JOptionPane.showInputDialog(null,
                 "Cup Size Choice\n" + "[1] Slim " + Slim
@@ -67,7 +67,7 @@ public class SmoothieMenu {
 
         if (prdChoice == 1) {
 
-            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Winter Melon + Pillar Cup "
+            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Strawberry - Banana + Slim "
                     + "\nQuantity: "));
             wallet = qty * Slim;
             passValue();
@@ -75,7 +75,7 @@ public class SmoothieMenu {
 
         } else if (prdChoice == 2) {
 
-            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Winter Melon + Classic Cup "
+            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Strawberry - Banana + The Usual "
                     + "\nQuantity: "));
             wallet = qty * TheUsual;
             passValue();
@@ -83,7 +83,7 @@ public class SmoothieMenu {
 
         } else if (prdChoice == 3) {
 
-            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Winter Melon + Grande Cup "
+            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Strawberry - Banana + Jumbo "
                     + "\n \nQuantity: "));
             wallet = qty * Jumbo;
             passValue();
@@ -96,9 +96,9 @@ public class SmoothieMenu {
 
     void order2() {
 
-        int Slim = 79;
-        int TheUsual = 89;
-        int Jumbo = 99;
+        int Slim = 95;
+        int TheUsual = 115;
+        int Jumbo = 135;
 
         prdChoice = Integer.parseInt(JOptionPane.showInputDialog(null,
                 "Cup Size Choice\n" + "[1] Slim " + Slim
@@ -138,9 +138,9 @@ public class SmoothieMenu {
 
     void order3() {
 
-        int Slim = 75;
-        int TheUsual = 85;
-        int Jumbo = 95;
+        int Slim = 99;
+        int TheUsual = 119;
+        int Jumbo = 139;
 
         prdChoice = Integer.parseInt(JOptionPane.showInputDialog(null,
                 "Cup Size Choice\n" + "[1] Slim " + Slim
@@ -151,7 +151,7 @@ public class SmoothieMenu {
 
         if (prdChoice == 1) {
 
-            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Salted Caramel + Pillar Cup "
+            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Mango + Slim "
                     + "\nQuantity: "));
             wallet = qty * Slim;
             passValue();
@@ -159,7 +159,7 @@ public class SmoothieMenu {
 
         } else if (prdChoice == 2) {
 
-            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Salted Caramel + Classic Cup "
+            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Mango + The Usual "
                     + "\nQuantity: "));
             wallet = qty * TheUsual;
             passValue();
@@ -167,7 +167,7 @@ public class SmoothieMenu {
 
         } else if (prdChoice == 3) {
 
-            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Salted Caramel + Grande Cup "
+            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Mango + Jumbo "
                     + "\n \nQuantity: "));
             wallet = qty * Jumbo;
             passValue();
