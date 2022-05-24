@@ -108,7 +108,7 @@ public class SmoothieMenu {
 
         if (prdChoice == 1) {
 
-            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Oreo Cheesecake + Pillar Cup "
+            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Lemon – Blueberry Smoothie + Slim "
                     + "\nQuantity: "));
             wallet = qty * Slim;
             passValue();
@@ -116,7 +116,7 @@ public class SmoothieMenu {
 
         } else if (prdChoice == 2) {
 
-            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Oreo Cheesecake + Classic Cup "
+            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Lemon – Blueberry Smoothie + The Usual  "
                     + "\nQuantity: "));
             wallet = qty * TheUsual;
             passValue();
@@ -124,7 +124,7 @@ public class SmoothieMenu {
 
         } else if (prdChoice == 3) {
 
-            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Oreo Cheesecake + Grande Cup "
+            qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\nYou Chose: Lemon – Blueberry Smoothie + Jumbo "
                     + "\n \nQuantity: "));
             wallet = qty * Jumbo;
             passValue();

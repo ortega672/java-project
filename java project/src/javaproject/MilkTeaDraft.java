@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class MilkTea {
+public class MilkTeaDraft {
 
     JFrame OptionPane;
 
@@ -21,7 +21,7 @@ public class MilkTea {
     int cost = 0, mlkWallet;
 
     
-    MilkTea() {
+    MilkTeaDraft() {
 
     this.mlkWallet = mlkWallet;
    
@@ -94,7 +94,7 @@ public class MilkTea {
             } else if (prdChoice == 4) {
 
                 System.out.println("the wallet = " + mlkWallet);
-                new MilkTea();
+                new MilkTeaDraft();
             }
         } while (prdChoice <= 4);
     }
@@ -151,7 +151,7 @@ public class MilkTea {
                
                 System.out.println("Total : " + mlkWallet);
 
-                new MilkTea();
+                new MilkTeaDraft();
                 
             }
         } while (prdChoice <= 4);
@@ -159,11 +159,6 @@ public class MilkTea {
         
     }
 
-
-    public static void main(String[] args) {
-
-        new MilkTea();
-    }
 
   
 }

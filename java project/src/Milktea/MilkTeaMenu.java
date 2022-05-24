@@ -15,9 +15,12 @@ public class MilkTeaMenu {
 
     MilkteaVariables mc = new MilkteaVariables();
 
+
     JFrame Optiopane;
 
    public MilkTeaMenu() {
+       
+      
 
         do {
 
@@ -89,7 +92,8 @@ public class MilkTeaMenu {
             passValue();
             order1();
         } else if (prdChoice == 4) {
-
+             
+            new MilkTeaMenu();
         }
 
     }
@@ -132,6 +136,7 @@ public class MilkTeaMenu {
             order2();
         } else if (prdChoice == 4) {
 
+             new MilkTeaMenu();
         }
 
     }
@@ -174,12 +179,11 @@ public class MilkTeaMenu {
             order3();
         } else if (prdChoice == 4) {
 
+             new MilkTeaMenu();
         }
 
     }
     
-    
-
     void passValue() {
 
         num = num + wallet;
