@@ -20,15 +20,17 @@ public class MilkTea {
     //WALLET 
     int cost = 0, mlkWallet;
 
+    
     MilkTea() {
 
+    this.mlkWallet = mlkWallet;
    
         do {
 
             trans = Integer.parseInt(JOptionPane.showInputDialog(null, """
                                                                        MilkTea Menu Choice 
                                                                         [1] Winter Melon
-                                                                      [2]Oreo Cheesecake
+                                                                        [2]Oreo Cheesecake
                                                                         [3] Salted Caramel                                                                      
                                                                        Choose [1-3]: """));
 
@@ -76,6 +78,10 @@ public class MilkTea {
         qty = Integer.parseInt(JOptionPane.showInputDialog(null, "\n You Chose: Oreo Cheesecake \nQuantity: "));
         evaluation();
     }
+   
+    
+    
+    /*
 
     void evaluation() {
 
@@ -95,13 +101,15 @@ public class MilkTea {
 
     int addWallet(int a, int b) {
 
-         mlkWallet = a * b;
+         int c = a * b;
 
-        return mlkWallet;
+        return c;
 
     }
+    
+    */
 
-    /*
+
     int evaluation() {
             
       
@@ -140,7 +148,7 @@ public class MilkTea {
 
             } else if (prdChoice == 4) {
 
-                this.mlkWallet = mlkWallet;
+               
                 System.out.println("Total : " + mlkWallet);
 
                 new MilkTea();
@@ -151,13 +159,11 @@ public class MilkTea {
         
     }
 
-     */
+
     public static void main(String[] args) {
 
-        MilkTea milkTea = new MilkTea();
+        new MilkTea();
     }
 
-    private void menu_choices() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+  
 }
