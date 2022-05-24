@@ -21,9 +21,9 @@ public class SmoothieMenu {
 
         do {
 
-            choice = Integer.parseInt(JOptionPane.showInputDialog(null, "MilkTea Menu Choice\n"
-                    + "					 [1] Strawberry     [4] Check Balance:\n"
-                    + "					 [2] Lemon             [5] Payment\n"
+            choice = Integer.parseInt(JOptionPane.showInputDialog(null, "Smoothie Menu Choice\n"
+                    + "					 [1] Strawberry\n"
+                    + "					 [2] Lemon\n"
                     + "					 [3] Mango\n"
                     + "					Choose [1-3]:"));
 
@@ -43,6 +43,9 @@ public class SmoothieMenu {
 
                 case 4 -> {
                     mc.balance();
+                }
+                case 5 -> {
+                    mc.payment();
                 }
 
             }
