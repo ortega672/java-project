@@ -24,12 +24,12 @@ public class MilkTeaMenu {
 
         do {
 
-            choice = Integer.parseInt(JOptionPane.showInputDialog(null, "MilkTea Menu Choice\n"
-                    + "					 [1] Winter Melon\n"
-                    + "					 [2]Oreo Cheesecake\n"
-                    + "					 [3] Salted Caramel\n"
-                    + "[4] Check Balance:\n"
-                    + "					Choose [1-3]:"));
+            choice = Integer.parseInt(JOptionPane.showInputDialog(null, "MilkTea Menu Choice"
+                    + "					 \n[1] Winter Melon"
+                    + "					 \n[2] Oreo Cheesecake"
+                    + "					 \n[3] Salted Caramel"
+                    + "\n[4] Check Balance:"
+                    + "					\nChoose [1-3]:"));
 
             switch (choice) {
 
