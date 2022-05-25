@@ -2,6 +2,8 @@ package javaproject;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+
+import FreshTea.FreshTeaMenu;
 import Milktea.MilkTeaMenu;
 import Smoothie.SmoothieMenu;
 import Smoothie.SmoothieVariables;
@@ -36,15 +38,18 @@ public class menu_choices {
                     break;
 
                 case 2:
-
+                	new FreshTeaMenu();
+                	
                     break;
 
                 case 3:
                     new SmoothieMenu();
+                    
                     break;
                     
                 case 4:
                     mc.balance();
+                    
                     break;
                     
                 case 5:
